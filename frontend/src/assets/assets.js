@@ -7,6 +7,7 @@ import sidearrow from './download (5).png'
 import exchange from './download (6).png'
 import returnback from './download (7).png'
 import customersupport from './download (8).png'
+import heroimage from './hero_img-DOCOb6wn.png'
 
 export const assets={
     logo,
@@ -16,7 +17,8 @@ export const assets={
     sidearrow,
     exchange,
     returnback,
-    customersupport,account
+    customersupport,account,
+    heroimage
 }
 export const products=[
     {
