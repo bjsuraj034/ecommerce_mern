@@ -1,4 +1,4 @@
-import logo from './download.png';
+import logo from './download.png'
 import search from './download (1).png'
 import account from './download (2).png'
 import cart from './download (3).png'
@@ -9,6 +9,9 @@ import returnback from './download (7).png'
 import customersupport from './download (8).png'
 import heroimage from './hero_img-DOCOb6wn.png'
 import crossIcon from './download (9).png'
+import star from './download (10).png'
+import dullstar from './download (11).png'
+import deleter from './download (12).png'
 import imgone from './p_img6.png'
 import imgtwo from './p_img8.png'
 import imgthree from './p_img14.png'
@@ -42,6 +45,9 @@ import imgThirty from './p_img13.png'
 import imgThirtyone from './p_img34.png'
 import imgThirtytwo from './p_img1.png'
 import imgThirtythree from './p_img29.png'
+import razorpay from './razorpay_logo-DrY6yMWi.png'
+import about from './about.avif'
+import contact from './contact.png'
 
 export const assets={
     logo,
@@ -87,7 +93,10 @@ export const assets={
     imgThirtyone,
     imgThirtyone,
     imgThirtytwo,
-    imgThirtythree
+    imgThirtythree,
+    dullstar,
+    star,
+    deleter,razorpay,about,contact
 }
 export const products=[
     {
@@ -95,7 +104,7 @@ export const products=[
          name:'women black neck cotton top',
          description:'A lightweight pure and prenium quality',
          price:100,
-         image:[imgone],
+         image:[imgone,imgtwo,imgthree],
          category:'Women',
          subCatageory:'Topwear',
          sizes:["S","M","L"],

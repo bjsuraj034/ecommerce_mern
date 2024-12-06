@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 
 const Navbar = () => {
-  const {setshowSearch}=useContext(ShopContext)
+  const {setshowSearch,getCartCount}=useContext(ShopContext)
   const location = useLocation();
   const [visible, setvisible] = useState(false);
   return (
@@ -39,8 +39,8 @@ const Navbar = () => {
           className={`${
             location.pathname === "/about"
               ? "text-gray-800 underline "
-              : "text-gray-400 uppercase "
-          }`}
+              : "text-gray-400  "
+          } hover:underline uppercase`}
         >
           <p>About</p>
         </NavLink>
@@ -58,7 +58,9 @@ const Navbar = () => {
       <div className="flex items-center justify-center gap-5">
         <img onClick={()=>{setshowSearch(true)}} src={assets.search} alt="" className="w-5 cursor-pointer" />
         <div className=" group relative">
+          <Link to={'/login'}>
           <img src={assets.account} alt="" className="w-5 cursor-pointer" />
+          </Link>
           <div className="group-hover:block hidden absolute dropdown-menu  right-0 pt-4">
             <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded">
               <p className="hover:text-black cursor-pointer">My profile</p>
@@ -70,7 +72,7 @@ const Navbar = () => {
         <Link to="/cart" className="relative">
           <img src={assets.cart} alt="" className="w-5 min-w-5" />
           <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white rounded-full aspect-square text-[8px]">
-            10
+            {getCartCount()}
           </p>
         </Link>
         <img

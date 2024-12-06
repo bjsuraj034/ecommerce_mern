@@ -15,17 +15,17 @@ const Footer = () => {
       <div className='flex flex-col leading-tight gap-1 text-gray-500 p-2'>
         <h2 className='mb-5 sm:mb-7 text-gray-800 font-bold uppercase text-xl'>Company</h2>
         <Link to='/'>
-        <p className={`${location.pathname==='/' ? "text-gray-950 underline" : "text-gray-200"} uppercase`}> home</p>
+        <p className={`${location.pathname==='/' ? "text-gray-950 underline" : "text-gray-700"} uppercase`}> home</p>
       
         </Link>
         <Link to='/collection'>
-         <p className={`${location.pathname==='/collection' ? "text-gray-950 underline" : "text-gray-600"} uppercase`}>Collection</p>
+         <p className={`${location.pathname==='/collection' ? "text-gray-950 underline" : "text-gray-700"} uppercase`}>Collection</p>
         </Link>
         <Link to='/about'>
-         <p className={`${location.pathname==='/about' ? "text-gray-950 underline" : "text-gray-600"} uppercase`}>About</p>
+         <p className={`${location.pathname==='/about' ? "text-gray-950 underline" : "text-gray-700"} uppercase`}>About</p>
         </Link>
         <Link to='/contact'>
-         <p className={`${location.pathname==='/contact' ? "text-gray-950 underline" : "text-gray-600"} uppercase`}>Contact</p>
+         <p className={`${location.pathname==='/contact' ? "text-gray-950 underline" : "text-gray-700"} uppercase`}>Contact</p>
         </Link>
       </div>
       <div className='flex flex-col p-2 text-gray-600'>
